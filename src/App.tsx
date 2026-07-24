@@ -2,7 +2,7 @@
 const App = () => {
   return (
     <div>
-      CICD changes added Branch Protection Rules
+      <h1>CICD changes added Branch Protection Rules</h1>
     </div>
   )
 }
