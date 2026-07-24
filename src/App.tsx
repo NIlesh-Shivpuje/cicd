@@ -2,7 +2,7 @@
 const App = () => {
   return (
     <div>
-      CICD
+      CICD changes added 
     </div>
   )
 }
