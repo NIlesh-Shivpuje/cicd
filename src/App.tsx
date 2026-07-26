@@ -1,11 +1,13 @@
+import { RouterProvider } from "react-router-dom";
+import { Suspense } from "react";
+import { router } from "@/app/router";
 
-const App = () => {
+function App() {
   return (
-    <div>
-      <h1>React CI/CD Setup Guide </h1>
-      <p>Hello wolrd</p>
-    </div>
-  )
+    <Suspense fallback={<div>Loading...</div>}>
+      <RouterProvider router={router} />
+    </Suspense>
+  );
 }
 
-export default App
+export default App;
