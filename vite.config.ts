@@ -5,7 +5,7 @@ import path from "node:path";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: '/cicd/',
+  base: process.env.GITHUB_PAGES ? '/my-react-app/' : '/',
   test: {
     environment: 'jsdom',
     globals: true,
